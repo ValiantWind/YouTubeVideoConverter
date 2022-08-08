@@ -1,14 +1,16 @@
 function generate(){
-    var urlInput = document.getElementById("urlInput").value;
-
-    var fileType = document.getElementById("fileFormatInput").value;
+    var urlInput = document.getElementById("input").value;
   
-    var apiUrl = ``;
+    var apiUrl = `https://convert2mp3s.com/api/widgetv2?url=${urlInput}`;
 
-    var downloadButton = document.getElementById("button");
+    var output = document.getElementById("output");
 
-    downloadButton.src = apiUrl;
+  var submitButton = document.getElementById("submit");
 
-  console.log(apiUrl)
+  submitButton.innerText = "Success!"
+
+    output.src = apiUrl;
+
+  console.log(output)
 
   }

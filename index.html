@@ -5,22 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YouTube Converter</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.min.js"></script>
   </head>
   <body>
     <div class="main">
       <h1>YouTube to MP3/MP4/WEBM Converter</h1>
-      <input type="text" name="" id="urlInput" autocomplete="off" placeholder="Input YouTube Video URL Here" required="true"/><br>
- <label for="fileformats">Choose a File Format:</label>
-  <select name="" id="fileFormatInput">
-    <option value="mp3">MP3</option>
-    <option value="mp4">MP4</option>
-    <option value="webm">WEBM</option>
-  </select>
-  <br><br>
+      <input type="text" name="" id="input" autocomplete="off" placeholder="Input YouTube Video URL Here"/><br>
       <button type="submit" onclick="generate()" id="submit">
         Generate
       </button>
-      <img src="" alt="" id="button">
+     <iframe src="" target="_blank"
+allowtransparency="true" scrolling="no" style="border:none" id="output"></iframe>
     </div>
     <script src="script.js"></script>
   </body>
