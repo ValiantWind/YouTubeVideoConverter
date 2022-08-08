@@ -3,17 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>QR Code Generator</title>
+    <title>YouTube Converter</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="main">
-      <h1>QR Code Generator</h1>
-      <input type="text" name="" id="input" autocomplete="off" placeholder="Input Text Here"/>
+      <h1>YouTube to MP3/MP4/WEBM Converter</h1>
+      <input type="text" name="" id="urlInput" autocomplete="off" placeholder="Input YouTube Video URL Here" required="true"/><br>
+ <label for="fileformats">Choose a File Format:</label>
+  <select name="" id="fileFormatInput">
+    <option value="mp3">MP3</option>
+    <option value="mp4">MP4</option>
+    <option value="webm">WEBM</option>
+  </select>
+  <br><br>
       <button type="submit" onclick="generate()" id="submit">
         Generate
       </button>
-      <img src="" alt="" id="img">
+      <img src="" alt="" id="button">
     </div>
     <script src="script.js"></script>
   </body>
